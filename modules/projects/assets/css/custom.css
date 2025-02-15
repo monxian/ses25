@@ -1,0 +1,119 @@
+/* Put your css here */
+.input-container button:hover {
+    background: var(--color-primary-35);
+}
+
+.inven-rows {
+    border: 1px solid var(--border);
+    border-radius: .5em;
+    margin: 1em .5em;
+    display: flex;
+    align-items: center;
+    background-color: var(--color-surface-30);
+    cursor: pointer;
+}
+
+.inven-rows:hover {
+    background-color: var(--color-surface-35);
+}
+
+
+.inven-rows a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-decoration: none;
+    padding: .5em;
+    min-width: 150px;
+}
+
+.inven-rows .a-text {
+    font-size: 1.1rem;
+    padding-left: .4em;
+}
+
+.truck-add {
+    padding: 4px;
+    background-color: var(--color-surface-55);
+    border-radius: .5em;
+
+}
+
+.desc-box {
+    max-height: 150px;
+    overflow-y: auto;
+}
+
+
+.project-header {
+    flex-direction: column;
+    align-items: start;
+}
+
+.project__name {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.project__completed label {
+    margin: 0;
+    padding: 0;
+    padding-right: 4px;
+}
+
+.big-checkbox {
+    transform: scale(1.5);
+    margin-left: .5em;
+}
+
+.work__total-hrs {
+    padding-top: .3em;
+}
+
+.work__info {
+    padding: 1em 0 0.5em 0;
+    color: white;
+}
+
+.work__info--hrs {
+    padding-left: 10px;
+    color: white;
+}
+
+
+.work__bar {
+    border-radius: 5px;
+    border: none;
+    height: 34px;
+    background: rgb(9, 104, 152);
+    background: linear-gradient(90deg, rgba(9, 104, 152, 1) 30%, rgba(110, 160, 187, 1) 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.work__bar--percent {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+
+}
+
+
+
+.project-notes {
+    margin-top: 1.5em;
+}
+
+.project-notes p:first-child {
+    padding-bottom: .5em;
+}
+
+@media screen and (max-width: 760px) {
+   .inven-rows a{
+    min-width: 36px;
+   }
+}

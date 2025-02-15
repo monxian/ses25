@@ -1,0 +1,28 @@
+  .input-container {
+      position: relative;
+  }
+
+  .input-container input[type="text"] {
+      width: 100%;
+      padding-right: 50px;
+      box-sizing: border-box;
+      height: 46px;
+  }
+  .input-container button {
+      position: absolute;
+      right: 2px;
+      top: 2px;
+      bottom: 0;
+      border: none;
+      background: var(--color-primary-45);
+      color: white;
+      padding: 0 10px;
+      cursor: pointer;
+      border-radius: 0 .5em .5em 0;
+      height: 42px;
+      /* Match input border radius */
+  }
+
+  .input-container button:hover {
+      background: var(--color-primary-35);
+  }

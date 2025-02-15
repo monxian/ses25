@@ -1,0 +1,49 @@
+ /* Basic Styles */
+ .slide-radio {
+     position: relative;
+     display: flex;
+     width: 100px;
+     height: 30px;
+     background-color: #f0f0f0;
+     border-radius: 20px;
+     overflow: hidden;
+     justify-content: space-between;
+     align-items: center;
+ }
+
+ /* Hide Radio Buttons */
+ .slide-radio input[type="radio"] {
+     display: none;
+ }
+
+ /* Labels */
+ .slide-radio label {
+     flex: 1;
+     text-align: center;
+     z-index: 2;
+     font-size: 16px;
+     cursor: pointer;
+     color: #333;
+     padding: 10px;
+ }
+
+ /* Slider */
+ .slide-radio .slider {
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 50%;
+     height: 100%;
+     background-color: var(--color-primary-45);
+     border-radius: 20px;
+     transition: 0.3s ease;
+     z-index: 1;
+ }
+
+ .slide-radio input[type="radio"]:checked:nth-of-type(1)~.slider {
+     transform: translateX(0%);
+ }
+
+ .slide-radio input[type="radio"]:checked:nth-of-type(2)~.slider {
+     transform: translateX(100%);
+ }

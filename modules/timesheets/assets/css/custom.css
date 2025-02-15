@@ -1,0 +1,203 @@
+    .timesheet__page {
+        max-width: 100vw;
+        width: 100%;
+        overflow: auto;
+    }
+
+    .timesheet__wrap {
+        width: 960px;
+        background: white;
+        border: 1px solid hsl(0, 0%, 15%);
+        margin-bottom: 20px;
+        color: hsl(0, 0%, 20%);
+        font-size: 14px;
+        margin: 1em;
+    }
+
+    .not-first {
+        page-break-before: always;
+
+    }
+
+    .timesheet__heading {
+        text-align: center;
+    }
+
+    .timesheet__heading h2 {
+        margin: 5px 0;
+    }
+
+    .timesheet__sub-heading {
+        border: 1px solid hsl(0, 0%, 15%);
+        border-left: none;
+        border-right: none;
+        text-align: center;
+        background-color: hsl(0, 0%, 80%);
+    }
+
+    .timesheet__sub-heading h4 {
+        padding: 4px 0;
+        margin: 0;
+        font-size: 14px;
+
+    }
+
+    .timesheet__profile {
+        font-weight: bold;
+        padding: 5px 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .timesheet__date-times {
+        display: flex;
+        align-items: center;
+        border: 1px solid hsl(0, 0%, 15%);
+        border-left: none;
+        border-right: none;
+        padding-top: 12px;
+        padding-bottom: 4px;
+        width: 100%;
+        color: hsl(0, 0%, 45%);
+        font-size: 14px;
+        font-style: italic;
+    }
+
+    .ts__day-row {
+        display: flex;
+        align-items: stretch;
+        border-bottom: 1px solid hsl(0, 0%, 15%);
+    }
+
+
+    .ts__w-10 {
+        width: 96px;
+        text-align: center;
+
+    }
+
+    .ts__w-5 {
+        width: 47px;
+        text-align: center;
+    }
+
+    .ts__w-35 {
+        width: 337px;
+        text-align: center;
+    }
+
+    .br-left {
+        border-right: 1px solid hsl(0, 0%, 70%);
+    }
+
+    .dr__date,
+    .dr__day {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .dr__total-hrs {
+        background: url(../imgs/circle.svg) center no-repeat;
+        background-size: contain;
+        width: 60px;
+        height: 48px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .dr__job-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .dr__job-container .dr__job-row:last-child {
+        border-bottom: none;
+    }
+
+    .dr__job-row {
+        height: 30px;
+        line-height: 30px;
+        border-bottom: 1px solid hsl(0, 0%, 70%);
+    }
+
+    .ts__week-totals {
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        padding: 8px 0;
+    }
+
+    .ts__week-totals>div {
+        padding-right: 30px;
+
+    }
+
+    .ts__job-links a{
+        color: #03a9f4;
+        text-decoration: underline;
+    }
+
+
+    .week__total-label {
+        font-size: 14px;
+        color: hsl(0, 0%, 45%);
+        font-style: italic;
+    }
+
+    .ts-flex {
+        display: flex;
+        align-items: center;
+    }
+
+    .ts-flex-col {
+        flex-direction: column;
+    }
+
+    .minus-alert {
+        color: hsl(11, 96%, 51%);
+    }
+    .no_jobs_week{
+        display: block;
+        padding: 1em;
+        margin: 1em;
+        border-radius: 4px ;
+        background-color: var(--color-surface-400);
+        width: max-content;
+    }
+    .ts-oncall{
+        background-color: red;
+        color: white;
+        font-size: .65rem;
+        padding: 0.3em;
+        border-radius: 5px;
+    }
+
+    @media print {
+
+        aside{
+            display: none;
+        }
+
+        body, main {
+            background: white;
+        }
+
+        .timesheet__page {
+            overflow: visible;
+        }
+
+        .ts__job-links a{
+            color: hsl(0, 0%, 20%);
+            text-decoration: none;
+        }
+
+        .no_jobs_week{
+            display: none;
+        }
+        .hide-print{
+            display: none;
+        }
+    }

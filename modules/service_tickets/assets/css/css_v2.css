@@ -1,0 +1,482 @@
+   * {
+       box-sizing: border-box;
+   }
+
+   ul {
+       margin: 0;
+       padding: 0;
+   }
+
+   ul button {
+       margin: 0 8px;
+   }
+
+   .ticket-page-wrap {
+       position: relative;
+       overflow: auto;
+   }
+
+   .ticket-btn {
+       border: 1px solid hsl(0, 0%, 60%);
+       border-radius: 4px;
+       background-color: white;
+       padding: 4px;
+       color: black;
+   }
+
+   .ticket-btn:hover {
+       cursor: pointer;
+       background-color: hsl(0, 0%, 60%);
+       color: white;
+   }
+
+   .back-btn {
+       margin-left: 1em;
+       text-decoration: none;
+       font-size: 12px;
+
+   }
+
+   .font-bold {
+       font-weight: bold;
+   }
+
+   .font-sm {
+       font-size: 12px;
+   }
+
+   .tx-center {
+       text-align: center;
+   }
+
+   .flx-row {
+       display: flex;
+       align-items: center;
+
+   }
+
+   .flx-col {
+       display: flex;
+       flex-direction: column;
+   }
+
+   .justify-sb {
+       justify-content: space-between;
+   }
+
+   .jcc {
+       justify-content: center;
+   }
+
+   .nav-wrap {
+       width: 50%;
+       margin: 0 auto;
+   }
+
+   nav {
+       padding: 16px;
+   }
+
+   .hide-label {
+       text-transform: uppercase;
+       font-weight: bold;
+       display: flex;
+       padding-left: 4px;
+   }
+
+   .ticket {
+       width: 8.5in;
+       height: 11in;
+       margin: 0 auto;
+       background: white;
+       padding: 8px;
+   }
+
+   .ticket-header {
+       display: flex;
+       align-items: center;
+       justify-content: space-between;
+       padding: 0 16px;
+   }
+
+   .ticket-header img {
+       width: 120px;
+   }
+
+   .ticket-header p {
+       margin: 0;
+   }
+
+   .black-block {
+       background: black;
+       color: white;
+       letter-spacing: 1.5ch;
+       font-weight: bold;
+       font-size: 1.2rem;
+       padding: .2em .5em;
+       margin-top: 0.5em;
+   }
+
+   /* General container for styling */
+   .ticket-container {
+       max-width: 100%;
+       overflow-x: auto;
+       /* Ensures responsiveness on smaller screens */
+   }
+
+   /* Basic table styling */
+   .ticket-table,
+   .parts-table,
+   .time-table {
+       width: 100%;
+       border-collapse: collapse;
+   }
+
+   /* Table cell styling */
+   .ticket-table td {
+       padding: 4px 8px 4px 16px;
+       border-bottom: 1px solid #ccc;
+       height: 44px;
+   }
+
+   .ticket-table td div:nth-child(1),
+   .serv-summary-title {
+       font-size: .8rem;
+       font-style: italic;
+       color: hsl(0, 0%, 40%);
+       padding-bottom: 2px;
+   }
+
+   .ticket-summary-container {
+       padding: 0 16px;
+       min-height: 180px;
+   }
+
+   .ticket-summary-container p {
+       margin: 0;
+   }
+
+   .serv-summary-title {
+       padding-top: 4px;
+   }
+
+   .ticket-table td div:nth-child(2) {
+       font-size: 1rem;
+       height: 18px;
+   }
+
+   .ticket-table tr:last-child td {
+       border-bottom: none;
+   }
+
+   /* Column width classes */
+   .col-60 {
+       width: 60%;
+       /* 60% width */
+   }
+
+   .col-20 {
+       width: 20%;
+       /* 20% width */
+   }
+
+   .col-full {
+       width: 100%;
+       /* Full width for the spanning cell */
+   }
+
+
+
+   .ticket-table td.bt3 {
+       border-top: 3px solid black;
+   }
+
+   .ticket-table td.bl3,
+   .parts-table td.bl3,
+   .parts-table th.bl3 {
+       border-left: 3px solid black;
+   }
+
+   /* General container for styling */
+   .parts-container {
+       max-width: 100%;
+       overflow-x: auto;
+       /* Ensures responsiveness on smaller screens */
+   }
+
+   /* Basic table styling */
+   .parts-table {
+       width: 100%;
+       border-collapse: collapse;
+   }
+
+   /* Table header styling */
+   .parts-table th {
+       padding: 4px 8px 8px 8px;
+       border: 1px solid black;
+       background-color: hsl(0, 0%, 90%);
+       /* Light gray background for header */
+       text-align: center;
+       font-size: .8rem;
+       font-weight: normal;
+       font-style: italic;
+
+   }
+
+   /* Table cell styling */
+   .parts-table td {
+       padding: 8px;
+       border-bottom: 1px solid #ccc;
+       font-size: 14px;
+       height: 33px;
+   }
+
+   .parts-table tr:last-of-type td {
+       border-bottom: 3px solid black;
+   }
+
+   .part-desc {
+       position: relative;
+   }
+
+   .pid-btn {
+       position: absolute;
+       top: 3px;
+       right: 20px;
+       border-radius: 50%;
+       border: 2px solid red;
+       display: flex;
+       align-items: center;
+       padding: 2px 4px;
+       color: red;
+       font-weight: bold;
+   }
+
+
+   /* Column width classes */
+   .col-10 {
+       width: 10%;
+       /* 10% width for QTY */
+   }
+
+   .col-30 {
+       width: 30%;
+       /* 30% width for PART NO. */
+   }
+
+   .col-75 {
+       width: 75%;
+       /* 70% width for PART NO. */
+   }
+
+   .col-25 {
+       width: 25%;
+       /* 70% width for PART NO. */
+   }
+
+   .time-table tr td {
+       padding: 4px 0;
+   }
+
+   .time-table p {
+       margin: 0;
+   }
+
+   .time-table tr:last-child td {
+       border: 3px solid black;
+       border-left: none;
+       border-right: none;
+   }
+
+   .time-table tr:last-child td:nth-child(1) {
+       font-weight: bold;
+       font-style: italic;
+   }
+
+   .time-table tr:last-child td:nth-child(2) {
+       border-left: 3px solid black;
+   }
+
+   .time-table td:nth-child(2) {
+       border: 3px solid black;
+       padding: 2px 4px;
+       font-weight: bold;
+       border-right: none;
+   }
+
+   .time-table td div {
+       font-size: 10px;
+   }
+
+   .time-table .time-value {
+       font-size: 14px;
+       padding: 0 16px;
+   }
+
+   .time-box-values {
+       padding-right: 16px;
+       font-size: 14px;
+   }
+
+   .disclaimer {
+       display: flex;
+       flex-direction: column;
+       padding: 2px 32px;
+   }
+
+   .disclaimer p {
+       margin: 0;
+       font-size: 10px;
+
+   }
+
+   .signature-col {
+       padding: 8px 16px;
+       text-align: center;
+       font-size: .8rem;
+       width: 230px;
+       height: 100px;
+   }
+
+   .signature-col div {
+       border-top: 1px solid black;
+   }
+
+   .signature-col img {
+       width: 200px;
+       height: 50px;
+   }
+
+   .ticket-footer {
+       background-color: hsl(0, 0%, 90%);
+       height: 30px;
+       border: 1px solid black;
+       text-align: center;
+       margin: 8px 0;
+   }
+
+   .ticket-footer h4 {
+       margin: 0;
+       padding: 8px 0;
+       color: hsl(0, 0%, 40%);
+
+   }
+
+   .step-completed {
+       background-color: hsl(200, 0%, 175%);
+   }
+
+   .st-modal {
+       display: none;
+       position: fixed;
+       top: 0;
+       left: 0;
+       width: 100%;
+       height: 100%;
+       background-color: rgba(0, 0, 0, 0.5);
+       /* Semi-transparent black */
+       backdrop-filter: blur(10px);
+       /* Applies blur to the background */
+       z-index: 999;
+       overflow: auto;
+
+   }
+
+   .st-modal-header {
+       display: flex;
+       align-items: center;
+       justify-content: space-between;
+
+   }
+
+   .st-modal-header div:nth-child(2) {
+       cursor: pointer;
+   }
+
+
+   .st-modal-content {
+       background-color: var(--color-surface-15);
+       max-width: 350px;
+       margin: 1em auto;
+       padding: 1em;
+       border-radius: 5px;
+       color: white;
+
+   }
+
+
+   .st-modal-footer {
+       display: flex;
+       align-items: center;
+       margin-top: 1em;
+       justify-content: space-between;
+   }
+
+   .st-modal .st-modal-btn {
+       background-color: var(--color-primary-45);
+       color: white;
+   }
+
+   .st-modal .st-modal-btn- {
+       background-color: var(--color-primary-45);
+       color: white;
+   }
+
+   .ticket-signatures {
+       width: 75%;
+   }
+
+   .signature-pad {
+       border-radius: 5px;
+       border: 1px solid var(--color-surface-40);
+       background-color: var(--color-surface-25);
+     
+   }
+
+   .visited {
+       background-color: hsl(200, 100%, 57%);
+       color: white;
+       border-color: white;
+   }
+
+   .body-no-scroll {
+       overflow: hidden;
+       touch-action: none;
+   }
+
+   @media print {
+       .pid-btn {
+           display: none;
+       }
+
+       .ticket {
+           display: block;
+       }
+   }
+
+   @media only screen and (max-width: 600px) {
+       .page-wrap {
+           width: 100%;
+           overflow: auto;
+       }
+
+       .ticket {
+           padding-bottom: 3em;
+       }
+
+       .nav-wrap {
+           width: 100%;
+           position: fixed;
+           bottom: 0;
+           overflow: auto;
+       }
+
+       nav {
+           width: max-content;
+           background-color: hsla(0, 0%, 30%, .9);
+       }
+
+       .hide-label {
+           display: none;
+       }
+   }

@@ -1,0 +1,14 @@
+   .image-section {
+       width: 425px;
+       height: 425px;
+       margin: 0 auto;
+       background: white;
+       border-radius: 1em;
+       border: 1px solid white;
+       overflow: hidden;
+   }
+
+   .image-section img {
+       width: 100%;
+       height: auto;
+   }

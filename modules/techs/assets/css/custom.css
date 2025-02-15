@@ -1,0 +1,21 @@
+/* Put your css here */
+.bshadow {
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+.job-container {
+    background-color: hsl(0, 0%, 95%);
+}
+
+.text-color-30 {
+    color: hsl(0, 0%, 30%);
+}
+
+.text-color-40 {
+    color: hsl(0, 0%, 40%);
+}
+
+.modal-wrap {
+    overflow-y: auto;
+    height: 80svh;
+}

@@ -1,0 +1,71 @@
+/* Put your css here */
+.part-div {
+    overflow-x: auto;
+    background-color: #fff;
+
+}
+
+.mr-heading {
+    text-align: center;
+    border: 2px solid black;
+    padding: 0.3em;
+    margin: 0.5em 0;
+}
+
+.form-info {
+    display: flex;
+    align-items: center;
+    padding: 0.5em;
+    max-width: 80%;
+    margin: 0 auto;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.form-info p:first-child {
+    margin-right: 10em;
+}
+
+.request-table {
+    width: 100%;
+    min-width: 800px;
+    border-collapse: collapse;
+}
+
+.request-table td,
+.pd-table td,
+.pd-table th,
+.request-table th {
+    border: 1px solid hsl(0, 0%, 70%);
+    text-align: center;
+    padding: 8px;
+}
+
+.request-table td:first-child,
+.request-table th:first-child {
+    width: 75px;
+}
+
+.pd-table {
+    width: 500px;
+    border-collapse: collapse;
+}
+
+.pd-table td {
+    width: 50%;
+}
+
+.request-purpose {
+    padding: 1em;
+}
+
+.note-section {
+    width: 50svw;
+    min-height: 10em;
+    margin-bottom: 2em;
+
+}
+
+.notes {
+    color: hsl(0, 0%, 40%)
+}
